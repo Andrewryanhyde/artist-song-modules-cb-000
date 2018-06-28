@@ -1,11 +1,11 @@
 module Memorable
+  module ClassMethods
+    def self.reset_all
+      @@songs.clear
+    end
 
-  def self.reset_all
-    @@songs.clear
+    def self.count
+      self.all.count
+    end
   end
-
-  def self.count
-    self.all.count
-  end
-
 end
