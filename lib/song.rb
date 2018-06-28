@@ -1,4 +1,5 @@
 require 'pry'
+require_relative '../lib/concerns/memorable'
 extend Memorable::ClassMethods
 
 class Song
