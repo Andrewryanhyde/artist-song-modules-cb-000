@@ -3,9 +3,10 @@ require 'pry'
 require_relative '../lib/concerns/memorable'
 
 
-extend Memorable::ClassMethods
+
 
 class Artist
+  extend Memorable::ClassMethods
   attr_accessor :name
   attr_reader :songs
 
